@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fallback color */
+    background-image: url('BG.JPG'); /* Add your background image here */
+    background-size: cover; /* This will cover the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Prevent the image from repeating */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+h2{
+    color: rgb(0, 255, 98);
+    font-size: 1cm;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #388E3C;
+    transform: translateY(-3px);
+}
+
+.container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    border: 2px solid #388E3C;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #e8f5e9;
+    transform: translateY(-8px);
+}
+
+footer {
+    background-color: #388E3C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #333;
+        transition: right 0.3s ease;
+        flex-direction: column;
+        padding-top: 60px;
+        z-index: 1000;
+    }
+
+    nav.active {
+        right: 0;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #444;
+    }
+}

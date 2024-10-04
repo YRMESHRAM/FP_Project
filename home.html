@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Resource Management</title>
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background alt.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            color: #333; 
+        }
+
+        .navbar {
+            background-color: #28a745; 
+            padding: 15px 20px; 
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .navbar a {
+            color: white; 
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 15px;
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .navbar a:hover {
+            background-color: #218838; 
+        }
+
+        .content {
+            flex: 1; 
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between; 
+        }
+
+        .hero-section {
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+        }
+
+        .hero-section h1 {
+            font-size: 3rem; 
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem; 
+            margin-bottom: 20px;
+        }
+
+        .hero-section a {
+            background-color: #28a745; 
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px; 
+            font-size: 1.125rem; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .hero-section a:hover {
+            background-color: #218838; 
+        }
+
+        .footer {
+            background-color: #28a745; 
+            color: white;
+            text-align: center;
+            padding: 15px 20px; 
+            margin-top: auto; 
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .footer p {
+            margin: 5px 0; 
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem; 
+            }
+
+            .hero-section p {
+                font-size: 1rem; 
+            }
+
+            .navbar a {
+                font-size: 16px; 
+                margin: 0 5px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+  
+    <div class="content">
+      
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <a href="home.html">Home</a>
+            <a href="login.html">Farmer Login</a>
+            <a href="anushka.html">Water Monitoring</a>
+            <a href="about.html">About Us</a>
+            <a href="harvesting-techniques.html">Harvesting Techniques</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+       
+        <div class="hero-section">
+            <h1>Water Resource Management</h1>
+            <p>A program to monitor and manage water resources, helping farmers optimize irrigation and conserve water.</p>
+            <a href="login.html">Get Started</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2024 Water Resource Management. Field project</p>
+        </div>
+    </div>
+
+</body>
+</html>
