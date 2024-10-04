@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa; /* Fallback color */
-    background-image: url('BG.JPG'); /* Add your background image here */
+    background-image: url('BG.jpg'); /* Add your background image here */
     background-size: cover; /* This will cover the entire body */
     background-position: center; /* Center the image */
     background-repeat: repeat; /* Prevent the image from repeating */
